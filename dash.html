@@ -9,9 +9,7 @@
     <meta name="author" content="">
 
     <title>Fridglr</title>
-      
-    
-
+  
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -24,7 +22,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.css"     rel="stylesheet">
     <link href="fridge.css"             rel="stylesheet">
 
   </head>
@@ -61,19 +59,18 @@
         <!--<img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
         <h1 class="text-uppercase mb-0">Start Bootstrap</h1>
         <hr class="star-light">
-        <!--<h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>-->
+        <h2 class="font-weight-light mb-0">Web Developer - Graphic Artist - User Experience Designer</h2>-->
           
       <h1 class="text-uppercase mb-0">Open Fridge</h1>
-          <hr class="star-light"> 
+        <hr class="star-light"> 
           
-          <div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-              <div id="myDIV" class="header">
-  <h2 style="margin:5px">Add Items</h2>
-  <input type="text" id="myInputa" placeholder="Items">
-  <span onclick="newElement()" class="addBtn">Add</span>
-</div>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div id="myDIV" class="header">
+            <h2 style="margin:5px">Add Items</h2>
+              <input type="text" id="myInputa" placeholder="Items">
+                <span onclick="newElement()" class="addBtn">Add</span>
+          </div>
 
 <ul id="myUL">
   <li>Chicken</li>
@@ -141,6 +138,7 @@ function newElement() {
   }
 }
 </script>
+
 </div>
 <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open Fridge</span>
 <br><span style="font-size:30px;cursor:pointer" onclick="closeNav()"> Close Fridge</span>-->
@@ -150,26 +148,24 @@ function newElement() {
     <span class="slider" onclick="openNav()"></span>
   </label>
           
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
-          
-
-function myFunction() {
-    var x = document.getElementById("mySidenav");
-    if (x.style.display === "none") {
-        document.getElementById("mySidenav").style.width = "250px";
-    } else {
-        document.getElementById("mySidenav").style.width = "0";
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
     }
-}
 
-</script>
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+          
+    function myFunction() {
+      var x = document.getElementById("mySidenav");
+      if (x.style.display === "none") {
+        document.getElementById("mySidenav").style.width = "250px";
+      } else {
+        document.getElementById("mySidenav").style.width = "0";
+      }
+    }
+  </script>
 
           
           
@@ -191,11 +187,12 @@ function myFunction() {
               </div>
               <img class="img-fluid" src="img/portfolio/cabin.png" alt="">
             </a>
-          </div>-->
+          </div>
         
        <div class="upload-container">
       <input id="upload" class="upload" name="upload" type="file" accept="image/gif, image/jpeg, image/png" aria-labelledby="upload-help" />
     </div>
+    
           <div class="col-md-6 col-lg-4">
             <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
               <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -249,15 +246,13 @@ function myFunction() {
         </div>
       </div>
         
-       
-        
-        
     </section>
 
     <!-- Recipe -->
     <section class="bg-primary text-white mb-0" id="about">
       <div class="container">
         <h2 class="text-center text-uppercase text-white">Recipes</h2>
+    </section>
      
     <style>      
     input[type=text] {
@@ -268,17 +263,18 @@ function myFunction() {
     font-size: 16px;
     background-color: white;
     background-image: url('searchicon.png');
-    background-position: 10px 10px; 
+    background-position: 10px 10px;
     background-repeat: no-repeat;
     padding: 12px 20px 12px 40px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
-}
+    }
 
-input[type=text]:focus {
-    width: 100%;
-}
-</style>
+    input[type=text]:focus {
+      width: 100%;
+    }
+    </style>
+
 <body>
     <form> 
         <center>
@@ -288,20 +284,13 @@ input[type=text]:focus {
     
     <div class="form-group">
         <br><center><button type="submit" class="btn btn-secondary btn-xl" href="/myfridge.html">Generate Recipes</button></center>
-              </div>
+    </div>
 
 </body>
-          
-          
-      </div>
-    </section>
-
-   
     
-
     <div class="copyright py-4 text-center text-white">
       <div class="container">
-        <small>Copyright &copy; Fridglr 2017</small>
+        <small>Copyright &copy; Tanjina Mowla and Farhana Mustafa</small>
       </div>
     </div>
 

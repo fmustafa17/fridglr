@@ -1,6 +1,6 @@
 body {
     font-family: "Lato", sans-serif;
-      margin: 0;
+    margin: 0;
     min-width: 25px;
 }
 
@@ -137,7 +137,6 @@ ul li.checked {
   color: #fff;
   text-decoration: line-through;
 }
-
 
 
 /* Style the close button */
