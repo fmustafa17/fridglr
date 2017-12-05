@@ -53,7 +53,10 @@
       </div>
     </nav>
 
-    <!-- Fridge -->
+   
+      
+      
+      <!-- Code for Fridge/ hidden menu -->
     <header class="masthead bg-primary text-white text-center">
       <div class="container">
         <!--<img class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
@@ -81,6 +84,9 @@
   <li>Mushrooms</li>
 </ul>
 
+
+<!--Javascript for fridge-->
+          
 <script>
 // Create a "close" button and append it to each list item
 var myNodelist = document.getElementsByTagName("LI");
@@ -143,12 +149,18 @@ function newElement() {
 <!--<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Open Fridge</span>
 <br><span style="font-size:30px;cursor:pointer" onclick="closeNav()"> Close Fridge</span>-->
           
-  <label class="switch">
+ 
+          
+<!--toggle button & opens fridge-->
+          
+<label class="switch">
     <input type="checkbox">
     <span class="slider" onclick="openNav()"></span>
   </label>
           
-  <script>
+
+<!-- Attempted Javascript to make toggle button work-->          
+<script>
     function openNav() {
       document.getElementById("mySidenav").style.width = "250px";
     }
