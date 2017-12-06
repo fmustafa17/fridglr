@@ -113,7 +113,7 @@ ul.fridge li {
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #416686;
+  background: #eee;
   font-size: 18px;
   transition: 0.2s;
   
@@ -152,7 +152,7 @@ ul.fridge li.checked {
 
 .close:hover {
   background-color: #f44336;
-  color: white;
+  color: black;
 }
 
 /* Style the header */

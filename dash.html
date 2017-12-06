@@ -9,6 +9,28 @@
     <meta name="author" content="">
 
     <title>Fridglr</title>
+      
+     <!--<style>      
+    input[type=text] {
+    width: 200px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+      width: 75%;
+    }
+    
+    </style>-->
   
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,6 +61,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
+              <form> 
+            <input type="text" name="search" placeholder="Search...">
+    </form>
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Upload Receipt</a>
             </li>
@@ -72,12 +97,14 @@
       
 
 <ul class="fridge" id="myUL">
-  <li>Chicken</li>
-  <li>Milk</li>
-  <li>Bread</li>
-  <li>Eggs</li>
-  <li>Tomatoes</li>
-  <li>Mushrooms</li>
+    <form action="">
+  <li><input type ="checkbox">Chicken</li>
+  <li class="checked">Milk</li>
+  <li><input type ="checkbox"> Bread</li>
+  <li><input type ="checkbox"> Eggs</li>
+  <li><input type ="checkbox"> Tomatoes</li>
+  <li><input type ="checkbox"> Mushrooms</li>
+    </form>
 </ul>
 
 
@@ -106,12 +133,12 @@ for (i = 0; i < close.length; i++) {
 }
 
 // Add a "checked" symbol when clicking on a list item
-// var list = document.querySelector('ul');
-// list.addEventListener('click', function(ev) {
-//   if (ev.target.tagName === 'LI') {
-//     ev.target.classList.toggle('checked');
+ //var list = document.querySelector('ul');
+ //list.addEventListener('click', function(ev) {
+  //if (ev.target.tagName === 'LI') {
+    // ev.target.classList.toggle('checked');
 //   }
-// }, false);
+ //}, false);
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
@@ -153,7 +180,12 @@ function newElement() {
     <input type="checkbox">
     <span class="slider" onclick="openNav()"></span>
 </label>
-          
+         
+          <center><body>
+
+<button type="button" class="btn btn-secondary btn-xl" onclick="alert('• Milk Has Expired   • Bread will Expire on 12/8')">Status</button>
+ 
+              </body></center>
 
 <!-- Attempted Javascript to make toggle button work-->          
 <script>
@@ -271,41 +303,30 @@ function newElement() {
     <section class="bg-primary text-white mb-0" id="about">
       <div class="container">
         <h2 class="text-center text-uppercase text-white">Recipes</h2>
-    </section>
+    <hr class="star-light">
      
-    <style>      
-    input[type=text] {
-    width: 130px;
-    box-sizing: border-box;
-    border: 2px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-    background-color: white;
-    background-image: url('searchicon.png');
-    background-position: 10px 10px;
-    background-repeat: no-repeat;
-    padding: 12px 20px 12px 40px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
-    }
-
-    input[type=text]:focus {
-      width: 100%;
-    }
-    </style>
+    
 
 <body>
+    <!--<div align = "right">
     <form> 
-        <center>
-            <input type="text" name="search" placeholder="Search...">
-        </center>
+           <center> <input type="text" name="search" placeholder="Search..."></center>
     </form>
+    </div>-->
+    <center><h3>Open Fridge</h3></center>
+   <br><center> <label class="switch">
+    <input type="checkbox">
+    <span class="slider" onclick="openNav()"></span>
+       </label></center>
+    
     
     <div class="form-group">
-        <br><center><button type="submit" class="btn btn-secondary btn-xl" href="/myfridge.html">Generate Recipes</button></center>
+     <br><center><button type="submit" class="btn btn-secondary btn-xl" href="/myfridge.html">Generate Recipes</button></center>
     </div>
 
 </body>
+        </div>
+      </section>
     
     <div class="copyright py-4 text-center text-white">
       <div class="container">
