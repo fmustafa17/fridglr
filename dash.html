@@ -156,15 +156,26 @@ function newElement() {
 <label class="switch">
     <input type="checkbox">
     <span class="slider" onclick="openNav()"></span>
-  </label>
+</label>
           
 
 <!-- Attempted Javascript to make toggle button work-->          
 <script>
+  var first_click = true;
     function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
+      if(first_click === true){
+        document.getElementById("mySidenav").style.width = "250px";
+      first_click = false;
+      }
+      else {
+        document.getElementById("mySidenav").style.width = "0";
+        first_click = true;
+      }
+      // document.getElementById("mySidenav").style.width = "250px";
+      // first_click = false;
 
+    }
+    
     function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
     }
