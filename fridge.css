@@ -126,12 +126,12 @@ ul li {
 
 /* Set all odd list items to a different color (zebra-stripes) */
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+  background: rgb(164, 200, 250);
 }
 
 /* Darker background-color on hover */
 ul li:hover {
-  background: #ddd;
+  background: rgb(164, 190, 225);
 }
 
 /* When clicked on, add a background color and strike out text */
@@ -143,21 +143,21 @@ ul li.checked {
 
 
 /* Style the close button */
-.closea {
+.close {
   position: absolute;
   right: 0;
   top: 0;
   padding: 12px 16px 12px 16px;
 }
 
-.closea:hover {
+.close:hover {
   background-color: #f44336;
   color: white;
 }
 
 /* Style the header */
 .header {
-  background-color: #f44336;
+  /* background-color: #f44336; */
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -171,7 +171,7 @@ ul li.checked {
 }
 
 /* Style the input */
-inputa {
+input {
   border: none;
   width: 75%;
   padding: 10px;
