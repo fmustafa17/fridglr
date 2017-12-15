@@ -98,12 +98,12 @@
 
 <ul class="fridge" id="myUL">
     <form action="">
-  <li><input type ="checkbox">Chicken</li>
-  <li class="checked">Milk</li>
-  <li><input type ="checkbox"> Bread</li>
-  <li><input type ="checkbox"> Eggs</li>
-  <li><input type ="checkbox"> Tomatoes</li>
-  <li><input type ="checkbox"> Mushrooms</li>
+  <li><input type="checkbox"> <br /> Chicken</li>
+  <li><input type="checkbox"> <br /> Milk</li>
+  <li><input type="checkbox"><br /> Bread</li>
+  <li><input type="checkbox"><br /> Eggs</li>
+  <li><input type="checkbox"> <br />Tomatoes</li>
+  <li><input type="checkbox"> <br />Mushrooms</li>
     </form>
 </ul>
 
@@ -132,13 +132,13 @@ for (i = 0; i < close.length; i++) {
   }
 }
 
-// Add a "checked" symbol when clicking on a list item
- //var list = document.querySelector('ul');
- //list.addEventListener('click', function(ev) {
-  //if (ev.target.tagName === 'LI') {
-    // ev.target.classList.toggle('checked');
-//   }
- //}, false);
+//Add a "checked" symbol when clicking on a list item
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if (ev.target.tagName === 'LI') {
+    ev.target.classList.toggle('checked');
+  }
+}, false);
 
 // Create a new list item when clicking on the "Add" button
 function newElement() {
